@@ -2,7 +2,13 @@
 <h2>Welcome to Your Collection!</h2>
 <form action="/pins/search" method="post">
     <label for="search">Filter: </label><input id="search" name="search" placeholder="Filter By Category" />
-    <input type="submit" value="Search" />
+    <input type="submit" value="Search" id="categorySearch" list="categories"/>
+    <datalist id="categories" for="categorySearch"> 
+      <option value="Anime"></option>
+      <option value="Comic"></option>
+      <option value="Music"></option>
+      <option value="Cartoon"></option>
+    </datalist>
   </form>
 <ul>
         <%for(const pin of pins){%>
