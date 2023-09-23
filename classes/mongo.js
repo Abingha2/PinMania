@@ -7,7 +7,8 @@ const schema = new mongoose.Schema({
     "category": String, // Category pin belongs in
     "series": String, //show or game that pin in from
     "plating": String, //plating pin is made from
-    "le": Number//amount of pieces made
+    "le": Number,//amount of pieces made
+    "img": String,//Image of pin
 })
 const db = mongoose.connection
 function init(URI){
@@ -65,5 +66,6 @@ module.exports={
     find,
     findOne,
     findOneAndUpdate,
-    findOneAndDelete
+    findOneAndDelete,
+    init
 }

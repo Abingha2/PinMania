@@ -1,9 +1,15 @@
 <%- include('partials/header'); %>
-    <ul>
+<h2>Welcome to Your Colllection!</h2>
+<form action="/pins/search" method="post">
+    <label for="search">Filter: </label><input id="search" name="search" placeholder="Filter By Category" />
+    <input type="submit" value="Search" />
+  </form>
+<ul>
         <%for(const pin of pins){%>
-            <li>
-                <%=pin%>
+           <li class="pin">
+                    <a href="/pins/<%=pins.indexOf(pin)%>"><img src="<%=pin.img%>"/><%=pin.name%></a>
             </li>
         <%}%>
+    
     </ul>
 <%- include('partials/footer'); %>

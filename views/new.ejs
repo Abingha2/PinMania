@@ -1,0 +1,31 @@
+<%- include('partials/header'); %>
+    <!--creating the form for users to fill out to add a pin to the users current collection-->
+    <form action="/pins/add" method="post">
+    
+    <!--adds the box for Maker's name with the placeholder Maker's name inside the box-->
+        <input id="makerName" name="maker" placeholder="Maker's Name"/>
+
+    <!--adds the box for Pin name with the placeholder Pin Name inside the box-->
+        <input id="name" name="name"placeholder="Pin Name"/>
+
+    <!--adds the box for Drop Price with the placeholder Drop Price inside the box-->
+        <input id="dropPrice" name ="dropPrice" placeholder="Drop Price"/>
+
+    <!--adds the box for Category of the pin with the placeholder Category inside the box-->
+        <input id="category" name="category"placeholder="Category"/>
+
+    <!--adds the box for Series Name with the placeholder Series inside the box-->
+        <input id="seriesName" name="series" placeholder="Series"/>
+
+    <!--adds the box for the Plating type with the placeholder Plating inside the box-->
+        <input id="platingType" name="plating"placeholder="Plating"/>
+
+    <!--adds the box for the LE of the pin with the placeholder LE inside the box-->
+        <input id="LE" name="le"placeholder="LE"/>
+
+    <!--adds the box for Image of the pin with the placeholder Image URL inside the box-->
+        <input id="Image" name="img" placeholder="Image URL"/>
+    
+     <!--adds a sumbit button for the user to submit all the information filled out in the form above into the array of the user's collection-->
+        <input type="submit">
+<%- include('partials/footer'); %>

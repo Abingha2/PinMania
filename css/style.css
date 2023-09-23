@@ -1,20 +1,26 @@
-img.bees{
-    width: 22vw;
-    height: 22vw;
-    object-fit: contain;
-    border: 2px solid black
+body{
+    background-color:#fa82a7;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Shrikhand', cursive;
+    color:white;
+    text-shadow:1px 1px 1px black;
+}
+header{
+    font-size:60px;
+    text-align: center;
 }
 nav{
     width:95vw;
 }
-li {
-    display:inline;
-    font-size: 20px;
-    border:2px solid red;
-    border-radius: 12px 12px 0px 0px;
-    background-color: black;
-    padding: 0px 30px 0px 30px;
-    margin: 0px 0px 0px 4px;
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 0;
+}
+
+nav ul li{
+    padding: 4px;
 }
 ul{
     display:flex;
@@ -30,26 +36,7 @@ a{
     color:white;
     text-decoration:none;
 }
-.gifmain{
-    display: flex;
-    width: 95vw;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-around;
-    align-items: center;
-    border: 2px solid black;
-    background:black;
-}
-div.cat{
-    width: 22vw;
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    text-shadow: 1px 1px 2px black, 1px 1px 2px black;
-    font-size: 1.3em;
-}
-div.lego{
+.pin{
     color: white;
     position: relative;
     z-index: 2;
@@ -59,17 +46,5 @@ div.lego{
     align-items: center;
     justify-content: center;
     align-content: center;
-}
-button.favoriteButton{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    border: none;
-    background: none;
-    width: 30px;
-    aspect-ratio: 1 / 1;
-    font-size: 2em;
-    color: pink;
-    z-index: 10;
-    text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black, 2px -2px 0px black,1px 1px 0px white, -1px -1px 0px white, 1px -1px 0px white, 1px -1px 0px white;
+    border:2px solid black;
 }

@@ -1,0 +1,26 @@
+<%- include('partials/header'); %>
+        <div id="makerName"><%=pin.maker%></div>
+
+        <div id="pinName"><%=pin.name%></div>
+
+        <div id="dropPrice"><%=pin.dropPrice%></div>
+
+        <div id="category"><%=pin.category%></div>
+
+        <div id="seriesName"><%=pin.series%></div>
+
+        <div id="platingType"><%=pin.plating%></div>
+
+        <div id="LE"><%=pin.le%></div>
+
+        <div id="Image"><%=pin.img%></div>
+
+<form action="/pins/<%=index%>?_method=delete" method=post>
+        <input type="submit" value="delete">
+</form>
+        <ul>
+            <li>
+                <a href="/pins/<%=index%>/edit">Edit</a>
+            </li>
+        </ul>
+<%- include('partials/footer'); %>

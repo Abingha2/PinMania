@@ -1,0 +1,31 @@
+<%- include('partials/header'); %>
+    <!--creating the form for users to fill out to edit a pin from the users current collection-->
+    <form action="/pins/<%=index%>?_method=PUT" method="post">
+
+    <!--adds the box for Maker's name with the placeholder Maker's name inside the box-->
+        <input id="makerName" name="maker" placeholder="Maker's Name" value="<%=pin.maker%>"/>
+
+    <!--adds the box for Pin name with the placeholder Pin Name inside the box-->
+        <input id="pinName" name="name"placeholder="Pin Name" value="<%=pin.name%>"/>
+
+    <!--adds the box for Drop Price with the placeholder Drop Price inside the box-->
+        <input id="dropPrice" name ="number" placeholder="Drop Price" value="<%=pin.dropPrice%>"/>
+
+    <!--adds the box for Category of the pin with the placeholder Category inside the box-->
+        <input id="category" name="category"placeholder="Category" value="<%=pin.category%>"/>
+
+    <!--adds the box for Series Name with the placeholder Series inside the box-->
+        <input id="seriesName" name="series" placeholder="Series" value="<%=pin.series%>"/>
+
+    <!--adds the box for the Plating type with the placeholder Plating inside the box-->
+        <input id="platingType" name="plating"placeholder="Plating" value="<%=pin.plating%>"/>
+
+    <!--adds the box for the LE of the pin with the placeholder LE inside the box-->
+        <input id="LE" name="le"placeholder="LE" value="<%=pin.le%>"/>
+
+    <!--adds the box for Image of the pin with the placeholder Image URL inside the box-->
+        <input id="Image" name="img" placeholder="Image URL" value="<%=pin.img%>"/>
+
+    <!--adds a sumbit button for the user to submit all the information filled out in the form above to edit a pin in the users collection-->
+        <input type="submit">
+<%- include('partials/footer'); %>
