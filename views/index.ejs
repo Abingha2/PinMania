@@ -1,5 +1,5 @@
 <%- include('partials/header'); %>
-<h2>Welcome to Your Colllection!</h2>
+<h2>Welcome to Your Collection!</h2>
 <form action="/pins/search" method="post">
     <label for="search">Filter: </label><input id="search" name="search" placeholder="Filter By Category" />
     <input type="submit" value="Search" />
@@ -7,7 +7,7 @@
 <ul>
         <%for(const pin of pins){%>
            <li class="pin">
-                    <a href="/pins/<%=pins.indexOf(pin)%>"><img src="<%=pin.img%>"/><%=pin.name%></a>
+                    <a href="/pins/<%=pins.indexOf(pin)%>" style="background-image: URL(<%=pin.img%>);"><%=pin.name%></a>
             </li>
         <%}%>
     
